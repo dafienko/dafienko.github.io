@@ -1,0 +1,218 @@
+\hypertarget{class_u_i_text}{}\doxysection{UIText Class Reference}
+\label{class_u_i_text}\index{UIText@{UIText}}
+
+
+{\ttfamily \#include $<$uitext.\+h$>$}
+
+
+
+Inheritance diagram for UIText\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_u_i_text__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for UIText\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_u_i_text__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_u_i_text_ab183d2cfdee2f378ced02580285f331a}{UIText}} ()
+\item 
+\mbox{\hyperlink{class_u_i_text_afea9171caddc03df88909400fe876d1b}{UIText}} (\mbox{\hyperlink{instance_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&data)
+\item 
+void \mbox{\hyperlink{class_u_i_text_a77023705515859d0986321f654f1e230}{render}} () override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_u_i_object}{UIObject}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_u_i_object_aa0a19f9f7b945b858ed35ae9a8c77996}{render}} () override
+\item 
+glm\+::vec2 \mbox{\hyperlink{class_u_i_object_affc2dc3b363ff0a2e00ef97d2fa6006f}{get\+Absolute\+Position}} ()
+\item 
+glm\+::vec2 \mbox{\hyperlink{class_u_i_object_aefac4240f2ebde1f8ccf60c3c5e4f6bd}{get\+Aboslute\+Size}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_instance}{Instance}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_instance_a8342fdef38b475586d3e84fea665b001}{on\+Child\+Added}} (std\+::function$<$ void(\mbox{\hyperlink{class_instance}{Instance}} \&, \mbox{\hyperlink{class_instance}{Instance}} \&)$>$ callback)
+\item 
+void \mbox{\hyperlink{class_instance_a70c2e77aa36184023eae992e490a0249}{on\+Child\+Removed}} (std\+::function$<$ void(\mbox{\hyperlink{class_instance}{Instance}} \&, \mbox{\hyperlink{class_instance}{Instance}} \&)$>$ callback)
+\item 
+\mbox{\hyperlink{class_instance_ab93c6f13492d4a5e34eb95e30c080fc8}{Instance}} (\mbox{\hyperlink{class_instance_ab62acbe83702c166f536020bfa3ecb7a}{Instance\+Class}} \mbox{\hyperlink{class_instance_ac72836ec7ef0fab6df04bc8d7d1909c3}{type}}, std\+::string \mbox{\hyperlink{class_instance_a80e29939a8dac12ad5d8008f3df241af}{name}})
+\item 
+void \mbox{\hyperlink{class_instance_add424275e3aa71d46989b5aff20d093c}{set\+Parent}} (\mbox{\hyperlink{class_instance}{Instance}} $\ast$parent)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_instance}{Instance}} $\ast$ $>$ \mbox{\hyperlink{class_instance_a785f0f81050edd44387b09f30c68ecc5}{get\+Children}} () const
+\item 
+\mbox{\hyperlink{class_instance}{Instance}} $\ast$ \mbox{\hyperlink{class_instance_ae999c5d80560b6137dd7b939db702bd8}{find\+Child}} (std\+::string \mbox{\hyperlink{class_instance_a80e29939a8dac12ad5d8008f3df241af}{name}}) const
+\item 
+\mbox{\hyperlink{class_instance}{Instance}} $\ast$ \mbox{\hyperlink{class_instance_a04b7d6516185e8477b249c4e07fa6817}{get\+Child}} (std\+::string \mbox{\hyperlink{class_instance_a80e29939a8dac12ad5d8008f3df241af}{name}}) const
+\item 
+virtual \mbox{\hyperlink{class_instance_a6e6f2ab25aa37838f8c4af014f663117}{$\sim$\+Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_u_i_text_a1ae925f8a22a3f812b36b321af8c154b}{text}} = \char`\"{}\char`\"{}
+\item 
+glm\+::vec3 \mbox{\hyperlink{class_u_i_text_a8a4c5e0191352c79559a588cea81627e}{text\+Color}} = glm\+::vec3(1)
+\item 
+float \mbox{\hyperlink{class_u_i_text_a11c649b676d8509432af4d59f632dd95}{text\+Transparency}} = 0
+\item 
+\mbox{\hyperlink{font_8h_ad4585222552b1d2484b56ad8af9c1b36}{Font\+Face}} \mbox{\hyperlink{class_u_i_text_a9ccc10b7f64859f76e4a63cb0c2f2ce9}{font}} = Font\+Face\+::\+Consola
+\item 
+unsigned int \mbox{\hyperlink{class_u_i_text_a4e6f137c995073845218e6d872473670}{text\+Size}} = 20
+\item 
+glm\+::vec2 \mbox{\hyperlink{class_u_i_text_a09feff9f1373524bd1c292736e9a8bb3}{text\+Anchor\+Point}} = glm\+::vec2(.\+5)
+\item 
+glm\+::vec2 \mbox{\hyperlink{class_u_i_text_ae0b06a52a2c820f3d19bc217776fd0b9}{text\+Padding}} = glm\+::vec2(0)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes inherited from \mbox{\hyperlink{class_u_i_object}{UIObject}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_u_i_object_a533d22f93e0eef838490c74a229cd179}{visible}} = true
+\item 
+float \mbox{\hyperlink{class_u_i_object_a8ae2ede02cae6421b4c8540466cd48a4}{background\+Transparency}} = 0
+\item 
+glm\+::vec3 \mbox{\hyperlink{class_u_i_object_ae10b262100982564b740cc9cf40e82df}{background\+Color}} = glm\+::vec3(1)
+\item 
+int \mbox{\hyperlink{class_u_i_object_ac0107b97ee14ef29f988aff6850c26aa}{border\+Thickness}} = 0
+\item 
+float \mbox{\hyperlink{class_u_i_object_a1f6c3c7d957f472be6e9f3bf1b33f935}{border\+Transparency}} = 0
+\item 
+glm\+::vec3 \mbox{\hyperlink{class_u_i_object_a291eabb4ee1e3139f4fc562edba81afe}{border\+Color}} = glm\+::vec3(1)
+\item 
+glm\+::vec2 \mbox{\hyperlink{class_u_i_object_a6423a297e50d7b33bcd7541635d1f1c3}{anchor\+Point}} = glm\+::vec2(0)
+\item 
+\mbox{\hyperlink{struct_u_i_coord}{UICoord}} \mbox{\hyperlink{class_u_i_object_a0126326c27d4ce96488a1fc163d3668c}{position}} = \{glm\+::vec2(0), glm\+::vec2(0)\}
+\item 
+\mbox{\hyperlink{struct_u_i_coord}{UICoord}} \mbox{\hyperlink{class_u_i_object_a14fe0e929a83bbcb45e32ef516f0462b}{size}} = \{glm\+::vec2(0), glm\+::vec2(0)\}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes inherited from \mbox{\hyperlink{class_instance}{Instance}}}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_instance_ab62acbe83702c166f536020bfa3ecb7a}{Instance\+Class}} \mbox{\hyperlink{class_instance_ac72836ec7ef0fab6df04bc8d7d1909c3}{type}}
+\item 
+std\+::string \mbox{\hyperlink{class_instance_a80e29939a8dac12ad5d8008f3df241af}{name}} = \char`\"{}\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Public Types inherited from \mbox{\hyperlink{class_instance}{Instance}}}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_instance_ab62acbe83702c166f536020bfa3ecb7a}{Instance\+Class}} \{ \mbox{\hyperlink{class_instance_ab62acbe83702c166f536020bfa3ecb7aa75b9380441cd59394cd3b642557c7b5c}{IC\+\_\+\+UI}}
+, \mbox{\hyperlink{class_instance_ab62acbe83702c166f536020bfa3ecb7aa1abb6e27d877ed703b33a5db337d6555}{IC\+\_\+\+UIObject}}
+, \mbox{\hyperlink{class_instance_ab62acbe83702c166f536020bfa3ecb7aaba9787b39b4841f56a8b37e5ee32da22}{IC\+\_\+\+UIFrame}}
+, \mbox{\hyperlink{class_instance_ab62acbe83702c166f536020bfa3ecb7aaef1b574e73647dd1823ddb6a2c3a4760}{IC\+\_\+\+UIText}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_u_i_object}{UIObject}}}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_u_i_object_a9aee4c7fa12d3d93208c5dad98b478a0}{init}} ()
+\item 
+static void \mbox{\hyperlink{class_u_i_object_a6ff917f7ded092f9fb920485889017f8}{destroy}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_instance}{Instance}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_instance}{Instance}} $\ast$ \mbox{\hyperlink{class_instance_aed392ae017144af74f0ff3b396d019bf}{from\+JSON}} (const std\+::string path)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_u_i_object}{UIObject}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_u_i_object_adc68b4d27f1c9aa171f54cc42580fb19}{UIObject}} (\mbox{\hyperlink{class_instance_ab62acbe83702c166f536020bfa3ecb7a}{Instance\+Class}} \mbox{\hyperlink{class_instance_ac72836ec7ef0fab6df04bc8d7d1909c3}{type}}, const std\+::string \mbox{\hyperlink{class_instance_a80e29939a8dac12ad5d8008f3df241af}{name}})
+\item 
+\mbox{\hyperlink{class_u_i_object_a2b56feebe89449ebe982836b042d6b90}{UIObject}} (\mbox{\hyperlink{class_instance_ab62acbe83702c166f536020bfa3ecb7a}{Instance\+Class}} \mbox{\hyperlink{class_instance_ac72836ec7ef0fab6df04bc8d7d1909c3}{type}}, const std\+::string \mbox{\hyperlink{class_instance_a80e29939a8dac12ad5d8008f3df241af}{name}}, \mbox{\hyperlink{instance_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&data)
+\item 
+void \mbox{\hyperlink{class_u_i_object_a8a7016c4f9d81e872ce2116f06b5cd42}{render}} (glm\+::vec2 parent\+Pos, glm\+::vec2 parent\+Size)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_u_i_text_ab183d2cfdee2f378ced02580285f331a}\label{class_u_i_text_ab183d2cfdee2f378ced02580285f331a}} 
+\index{UIText@{UIText}!UIText@{UIText}}
+\index{UIText@{UIText}!UIText@{UIText}}
+\doxysubsubsection{\texorpdfstring{UIText()}{UIText()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily UIText\+::\+UIText (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_u_i_text_afea9171caddc03df88909400fe876d1b}\label{class_u_i_text_afea9171caddc03df88909400fe876d1b}} 
+\index{UIText@{UIText}!UIText@{UIText}}
+\index{UIText@{UIText}!UIText@{UIText}}
+\doxysubsubsection{\texorpdfstring{UIText()}{UIText()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily UIText\+::\+UIText (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{instance_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&}]{data }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_u_i_text_a77023705515859d0986321f654f1e230}\label{class_u_i_text_a77023705515859d0986321f654f1e230}} 
+\index{UIText@{UIText}!render@{render}}
+\index{render@{render}!UIText@{UIText}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void UIText\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_u_i_object_aa0a19f9f7b945b858ed35ae9a8c77996}{UIObject}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_u_i_text_a9ccc10b7f64859f76e4a63cb0c2f2ce9}\label{class_u_i_text_a9ccc10b7f64859f76e4a63cb0c2f2ce9}} 
+\index{UIText@{UIText}!font@{font}}
+\index{font@{font}!UIText@{UIText}}
+\doxysubsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily \mbox{\hyperlink{font_8h_ad4585222552b1d2484b56ad8af9c1b36}{Font\+Face}} UIText\+::font = Font\+Face\+::\+Consola}
+
+\mbox{\Hypertarget{class_u_i_text_a1ae925f8a22a3f812b36b321af8c154b}\label{class_u_i_text_a1ae925f8a22a3f812b36b321af8c154b}} 
+\index{UIText@{UIText}!text@{text}}
+\index{text@{text}!UIText@{UIText}}
+\doxysubsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily std\+::string UIText\+::text = \char`\"{}\char`\"{}}
+
+\mbox{\Hypertarget{class_u_i_text_a09feff9f1373524bd1c292736e9a8bb3}\label{class_u_i_text_a09feff9f1373524bd1c292736e9a8bb3}} 
+\index{UIText@{UIText}!textAnchorPoint@{textAnchorPoint}}
+\index{textAnchorPoint@{textAnchorPoint}!UIText@{UIText}}
+\doxysubsubsection{\texorpdfstring{textAnchorPoint}{textAnchorPoint}}
+{\footnotesize\ttfamily glm\+::vec2 UIText\+::text\+Anchor\+Point = glm\+::vec2(.\+5)}
+
+\mbox{\Hypertarget{class_u_i_text_a8a4c5e0191352c79559a588cea81627e}\label{class_u_i_text_a8a4c5e0191352c79559a588cea81627e}} 
+\index{UIText@{UIText}!textColor@{textColor}}
+\index{textColor@{textColor}!UIText@{UIText}}
+\doxysubsubsection{\texorpdfstring{textColor}{textColor}}
+{\footnotesize\ttfamily glm\+::vec3 UIText\+::text\+Color = glm\+::vec3(1)}
+
+\mbox{\Hypertarget{class_u_i_text_ae0b06a52a2c820f3d19bc217776fd0b9}\label{class_u_i_text_ae0b06a52a2c820f3d19bc217776fd0b9}} 
+\index{UIText@{UIText}!textPadding@{textPadding}}
+\index{textPadding@{textPadding}!UIText@{UIText}}
+\doxysubsubsection{\texorpdfstring{textPadding}{textPadding}}
+{\footnotesize\ttfamily glm\+::vec2 UIText\+::text\+Padding = glm\+::vec2(0)}
+
+\mbox{\Hypertarget{class_u_i_text_a4e6f137c995073845218e6d872473670}\label{class_u_i_text_a4e6f137c995073845218e6d872473670}} 
+\index{UIText@{UIText}!textSize@{textSize}}
+\index{textSize@{textSize}!UIText@{UIText}}
+\doxysubsubsection{\texorpdfstring{textSize}{textSize}}
+{\footnotesize\ttfamily unsigned int UIText\+::text\+Size = 20}
+
+\mbox{\Hypertarget{class_u_i_text_a11c649b676d8509432af4d59f632dd95}\label{class_u_i_text_a11c649b676d8509432af4d59f632dd95}} 
+\index{UIText@{UIText}!textTransparency@{textTransparency}}
+\index{textTransparency@{textTransparency}!UIText@{UIText}}
+\doxysubsubsection{\texorpdfstring{textTransparency}{textTransparency}}
+{\footnotesize\ttfamily float UIText\+::text\+Transparency = 0}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{uitext_8h}{uitext.\+h}}\item 
+src/\mbox{\hyperlink{uitext_8cpp}{uitext.\+cpp}}\end{DoxyCompactItemize}

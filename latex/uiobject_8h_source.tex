@@ -1,0 +1,57 @@
+\hypertarget{uiobject_8h_source}{}\doxysection{uiobject.\+h}
+\label{uiobject_8h_source}\index{src/uiobject.h@{src/uiobject.h}}
+\mbox{\hyperlink{uiobject_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <glm/ext.hpp>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{instance_8h}{instance.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{renderable_8h}{renderable.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ui_8h}{ui.h}}"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_u_i_coord}{UICoord}}\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ glm::vec2\ \mbox{\hyperlink{struct_u_i_coord_a00942f21aa2b02571ac9624f4d33c6f4}{scale}};}
+\DoxyCodeLine{00011\ \ \ \ \ glm::vec2\ \mbox{\hyperlink{struct_u_i_coord_abc7f6c6db29fb0f35f2c7259df0e2a9f}{offset}};}
+\DoxyCodeLine{00012\ \};}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_u_i_object}{UIObject}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_instance}{Instance}},\ \mbox{\hyperlink{class_renderable}{Renderable}}\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{public}:\ }
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_i_object_a9aee4c7fa12d3d93208c5dad98b478a0}{init}}();}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_i_object_a6ff917f7ded092f9fb920485889017f8}{destroy}}();}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ glm::vec2\ absolutePosition;}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ glm::vec2\ absoluteSize;}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ updateRenderedDimensions(glm::vec2\ parentPos,\ glm::vec2\ parentSize);}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_u_i_object}{UIObject}}(\mbox{\hyperlink{class_instance_ab62acbe83702c166f536020bfa3ecb7a}{InstanceClass}}\ \mbox{\hyperlink{class_instance_ac72836ec7ef0fab6df04bc8d7d1909c3}{type}},\ \textcolor{keyword}{const}\ std::string\ \mbox{\hyperlink{class_instance_a80e29939a8dac12ad5d8008f3df241af}{name}});}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_u_i_object}{UIObject}}(\mbox{\hyperlink{class_instance_ab62acbe83702c166f536020bfa3ecb7a}{InstanceClass}}\ \mbox{\hyperlink{class_instance_ac72836ec7ef0fab6df04bc8d7d1909c3}{type}},\ \textcolor{keyword}{const}\ std::string\ \mbox{\hyperlink{class_instance_a80e29939a8dac12ad5d8008f3df241af}{name}},\ \mbox{\hyperlink{instance_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}}\&\ data);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_i_object_aa0a19f9f7b945b858ed35ae9a8c77996}{render}}(glm::vec2\ parentPos,\ glm::vec2\ parentSize);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{public}:\ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_u_i_object_a533d22f93e0eef838490c74a229cd179}{visible}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_u_i_object_a8ae2ede02cae6421b4c8540466cd48a4}{backgroundTransparency}}\ =\ 0;}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ glm::vec3\ \mbox{\hyperlink{class_u_i_object_ae10b262100982564b740cc9cf40e82df}{backgroundColor}}\ =\ glm::vec3(1);}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_u_i_object_ac0107b97ee14ef29f988aff6850c26aa}{borderThickness}}\ =\ 0;}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_u_i_object_a1f6c3c7d957f472be6e9f3bf1b33f935}{borderTransparency}}\ =\ 0;}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ glm::vec3\ \mbox{\hyperlink{class_u_i_object_a291eabb4ee1e3139f4fc562edba81afe}{borderColor}}\ =\ glm::vec3(1);}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ glm::vec2\ \mbox{\hyperlink{class_u_i_object_a6423a297e50d7b33bcd7541635d1f1c3}{anchorPoint}}\ =\ glm::vec2(0);}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_u_i_coord}{UICoord}}\ \mbox{\hyperlink{class_u_i_object_a0126326c27d4ce96488a1fc163d3668c}{position}}\ =\ \{glm::vec2(0),\ glm::vec2(0)\};}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_u_i_coord}{UICoord}}\ \mbox{\hyperlink{class_u_i_object_a14fe0e929a83bbcb45e32ef516f0462b}{size}}\ =\ \{glm::vec2(0),\ glm::vec2(0)\};}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_i_object_aa0a19f9f7b945b858ed35ae9a8c77996}{render}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ glm::vec2\ \mbox{\hyperlink{class_u_i_object_affc2dc3b363ff0a2e00ef97d2fa6006f}{getAbsolutePosition}}();}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ glm::vec2\ \mbox{\hyperlink{class_u_i_object_aefac4240f2ebde1f8ccf60c3c5e4f6bd}{getAbosluteSize}}();}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_u_i}{UI}};}
+\DoxyCodeLine{00051\ \};}
+
+\end{DoxyCode}

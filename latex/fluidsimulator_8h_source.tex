@@ -1,0 +1,49 @@
+\hypertarget{fluidsimulator_8h_source}{}\doxysection{fluidsimulator.\+h}
+\label{fluidsimulator_8h_source}\index{src/fluidsimulator.h@{src/fluidsimulator.h}}
+\mbox{\hyperlink{fluidsimulator_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once\ }}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <GL/glew.h>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <glm/ext.hpp>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{rendertarget_8h}{rendertarget.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{rendertargetarray_8h}{rendertargetarray.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{shader_8h}{shader.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{renderable_8h}{renderable.h}}"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_fluid_simulator}{FluidSimulator}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_renderable}{Renderable}}\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{private}:\ }
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shader_program}{ShaderProgram}}\ fluidShader;}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shader_program}{ShaderProgram}}\ gridSolveShader;}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shader_program}{ShaderProgram}}\ advectVelocityShader;}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shader_program}{ShaderProgram}}\ advectDensityShader;}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shader_program}{ShaderProgram}}\ visualShader;}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_render_target_array}{RenderTargetArray}}\ physicsTargets;}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_render_target_array}{RenderTargetArray}}\ obstaclesTargets;}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_render_target_array}{RenderTargetArray}}\ densityTargets;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_render_target}{RenderTarget}}\ pressureTarget;}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_render_target}{RenderTarget}}\ visualTarget;}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ std::unique\_ptr<float>\ velocityBuffer;}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ fluidRenderMode\ =\ 0;}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ updatePressure(\textcolor{keywordtype}{float}\ dt);}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ solve(\textcolor{keywordtype}{float}\ dt);}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ advect(\textcolor{keywordtype}{float}\ dt);}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ glm::ivec2\ \mbox{\hyperlink{class_fluid_simulator_ae5b50cc46badcdd2f1b7dd39de96009e}{simulationSize}};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_fluid_simulator}{FluidSimulator}}(glm::ivec2\ \mbox{\hyperlink{class_fluid_simulator_ae5b50cc46badcdd2f1b7dd39de96009e}{simulationSize}});}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fluid_simulator_aeee3623f547253e98a73681c827671b8}{update}}(\textcolor{keywordtype}{float}\ dt);}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fluid_simulator_a17d4302438f5ea396919eb107219e865}{bindObstaclesTexture}}();}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}*\ \mbox{\hyperlink{class_fluid_simulator_af47e95710fe6ac4f7bb9ff9127fe2502}{getVelocityBuffer}}();}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fluid_simulator_a7abaaf2e294b8f458f3eaaff0cae932c}{render}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00043\ \};}
+
+\end{DoxyCode}

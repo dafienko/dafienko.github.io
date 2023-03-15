@@ -1,0 +1,88 @@
+\hypertarget{namespace_window}{}\doxysection{Window Namespace Reference}
+\label{namespace_window}\index{Window@{Window}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_window_aec7b8149837356cab716dad8310cd3a7}{init}} (int width, int height, const char $\ast$title)
+\item 
+void \mbox{\hyperlink{namespace_window_ae3be32b4221c3d32752c2500a82a60b3}{loop}} (std\+::function$<$ void(float)$>$ loop\+Callback)
+\item 
+void \mbox{\hyperlink{namespace_window_a037e44ca7458a469c11654bf1ad804ed}{set\+Key\+Callback}} (std\+::function$<$ void(int, int, int)$>$ \mbox{\hyperlink{window_8cpp_abba77500c17072decc572ca729b5706f}{key\+Callback}})
+\item 
+void \mbox{\hyperlink{namespace_window_a38b2f04d697730b57f9438e564a9fe15}{set\+Mouse\+Pos\+Callback}} (std\+::function$<$ void(double, double)$>$ \mbox{\hyperlink{window_8cpp_af047a87fd67ee9f0e8e58306541ebcde}{mouse\+Pos\+Callback}})
+\item 
+void \mbox{\hyperlink{namespace_window_a1ca96a773ca7af04e1133a2d3b313cdb}{set\+Mouse\+Button\+Callback}} (std\+::function$<$ void(int, int, int)$>$ \mbox{\hyperlink{window_8cpp_a705f740981dcccdff260fe63d431c290}{mouse\+Button\+Callback}})
+\item 
+void \mbox{\hyperlink{namespace_window_a8064da33e3db3c8740718e1fa3c3fccd}{set\+Window\+Resize\+Callback}} (std\+::function$<$ void(int, int)$>$ window\+Resize\+Callback)
+\item 
+glm\+::ivec2 \mbox{\hyperlink{namespace_window_a2aaa08231ec752ba4343655f33659ac9}{get\+Window\+Framebuffer\+Size}} ()
+\item 
+glm\+::ivec2 \mbox{\hyperlink{namespace_window_a940f2cdf0390d5ccfba803f8ac8cc535}{get\+Window\+Screen\+Coordinate\+Size}} ()
+\item 
+glm\+::vec2 \mbox{\hyperlink{namespace_window_aab1da28bb355453a61bd4f8413168441}{get\+Mouse\+Position}} ()
+\item 
+void \mbox{\hyperlink{namespace_window_aa89262ad2538473c8d7e4d8dd641849d}{destroy}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_window_aa89262ad2538473c8d7e4d8dd641849d}\label{namespace_window_aa89262ad2538473c8d7e4d8dd641849d}} 
+\index{Window@{Window}!destroy@{destroy}}
+\index{destroy@{destroy}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void Window\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_window_aab1da28bb355453a61bd4f8413168441}\label{namespace_window_aab1da28bb355453a61bd4f8413168441}} 
+\index{Window@{Window}!getMousePosition@{getMousePosition}}
+\index{getMousePosition@{getMousePosition}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{getMousePosition()}{getMousePosition()}}
+{\footnotesize\ttfamily glm\+::vec2 Window\+::get\+Mouse\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_window_a2aaa08231ec752ba4343655f33659ac9}\label{namespace_window_a2aaa08231ec752ba4343655f33659ac9}} 
+\index{Window@{Window}!getWindowFramebufferSize@{getWindowFramebufferSize}}
+\index{getWindowFramebufferSize@{getWindowFramebufferSize}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{getWindowFramebufferSize()}{getWindowFramebufferSize()}}
+{\footnotesize\ttfamily glm\+::ivec2 Window\+::get\+Window\+Framebuffer\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_window_a940f2cdf0390d5ccfba803f8ac8cc535}\label{namespace_window_a940f2cdf0390d5ccfba803f8ac8cc535}} 
+\index{Window@{Window}!getWindowScreenCoordinateSize@{getWindowScreenCoordinateSize}}
+\index{getWindowScreenCoordinateSize@{getWindowScreenCoordinateSize}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{getWindowScreenCoordinateSize()}{getWindowScreenCoordinateSize()}}
+{\footnotesize\ttfamily glm\+::ivec2 Window\+::get\+Window\+Screen\+Coordinate\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_window_aec7b8149837356cab716dad8310cd3a7}\label{namespace_window_aec7b8149837356cab716dad8310cd3a7}} 
+\index{Window@{Window}!init@{init}}
+\index{init@{init}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Window\+::init (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{const char $\ast$}]{title }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_window_ae3be32b4221c3d32752c2500a82a60b3}\label{namespace_window_ae3be32b4221c3d32752c2500a82a60b3}} 
+\index{Window@{Window}!loop@{loop}}
+\index{loop@{loop}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{loop()}{loop()}}
+{\footnotesize\ttfamily void Window\+::loop (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(float)$>$}]{loop\+Callback }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_window_a037e44ca7458a469c11654bf1ad804ed}\label{namespace_window_a037e44ca7458a469c11654bf1ad804ed}} 
+\index{Window@{Window}!setKeyCallback@{setKeyCallback}}
+\index{setKeyCallback@{setKeyCallback}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{setKeyCallback()}{setKeyCallback()}}
+{\footnotesize\ttfamily void Window\+::set\+Key\+Callback (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(int, int, int)$>$}]{key\+Callback }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_window_a1ca96a773ca7af04e1133a2d3b313cdb}\label{namespace_window_a1ca96a773ca7af04e1133a2d3b313cdb}} 
+\index{Window@{Window}!setMouseButtonCallback@{setMouseButtonCallback}}
+\index{setMouseButtonCallback@{setMouseButtonCallback}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{setMouseButtonCallback()}{setMouseButtonCallback()}}
+{\footnotesize\ttfamily void Window\+::set\+Mouse\+Button\+Callback (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(int, int, int)$>$}]{mouse\+Button\+Callback }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_window_a38b2f04d697730b57f9438e564a9fe15}\label{namespace_window_a38b2f04d697730b57f9438e564a9fe15}} 
+\index{Window@{Window}!setMousePosCallback@{setMousePosCallback}}
+\index{setMousePosCallback@{setMousePosCallback}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{setMousePosCallback()}{setMousePosCallback()}}
+{\footnotesize\ttfamily void Window\+::set\+Mouse\+Pos\+Callback (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(double, double)$>$}]{mouse\+Pos\+Callback }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_window_a8064da33e3db3c8740718e1fa3c3fccd}\label{namespace_window_a8064da33e3db3c8740718e1fa3c3fccd}} 
+\index{Window@{Window}!setWindowResizeCallback@{setWindowResizeCallback}}
+\index{setWindowResizeCallback@{setWindowResizeCallback}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{setWindowResizeCallback()}{setWindowResizeCallback()}}
+{\footnotesize\ttfamily void Window\+::set\+Window\+Resize\+Callback (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(int, int)$>$}]{window\+Resize\+Callback }\end{DoxyParamCaption})}
+

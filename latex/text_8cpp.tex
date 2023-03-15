@@ -1,0 +1,54 @@
+\hypertarget{text_8cpp}{}\doxysection{src/text.cpp File Reference}
+\label{text_8cpp}\index{src/text.cpp@{src/text.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include \char`\"{}quad.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}text.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}core.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shader.\+h\char`\"{}}\newline
+Include dependency graph for text.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{text_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_font}{Font}} \& \mbox{\hyperlink{text_8cpp_a12a44c71cb07e5f41b88207923425c26}{get\+Font}} (\mbox{\hyperlink{font_8h_ad4585222552b1d2484b56ad8af9c1b36}{Font\+Face}} font\+Face, unsigned int font\+Size)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ std\+::unordered\+\_\+map$<$ int, std\+::map$<$ unsigned int, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_font}{Font}} $>$ $>$ $>$ $>$ \mbox{\hyperlink{text_8cpp_a9b6850e537826587eadbd0c67591fbb9}{fonts}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_shader_program}{Shader\+Program}} $>$ \mbox{\hyperlink{text_8cpp_a195a17fc8db555df2c0753aca2dcd371}{glyph\+Shader}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{text_8cpp_a12a44c71cb07e5f41b88207923425c26}\label{text_8cpp_a12a44c71cb07e5f41b88207923425c26}} 
+\index{text.cpp@{text.cpp}!getFont@{getFont}}
+\index{getFont@{getFont}!text.cpp@{text.cpp}}
+\doxysubsubsection{\texorpdfstring{getFont()}{getFont()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_font}{Font}} \& get\+Font (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{font_8h_ad4585222552b1d2484b56ad8af9c1b36}{Font\+Face}}}]{font\+Face,  }\item[{unsigned int}]{font\+Size }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{text_8cpp_a9b6850e537826587eadbd0c67591fbb9}\label{text_8cpp_a9b6850e537826587eadbd0c67591fbb9}} 
+\index{text.cpp@{text.cpp}!fonts@{fonts}}
+\index{fonts@{fonts}!text.cpp@{text.cpp}}
+\doxysubsubsection{\texorpdfstring{fonts}{fonts}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$std\+::unordered\+\_\+map$<$int, std\+::map$<$unsigned int, std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_font}{Font}}$>$ $>$ $>$ $>$ fonts}
+
+\mbox{\Hypertarget{text_8cpp_a195a17fc8db555df2c0753aca2dcd371}\label{text_8cpp_a195a17fc8db555df2c0753aca2dcd371}} 
+\index{text.cpp@{text.cpp}!glyphShader@{glyphShader}}
+\index{glyphShader@{glyphShader}!text.cpp@{text.cpp}}
+\doxysubsubsection{\texorpdfstring{glyphShader}{glyphShader}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_shader_program}{Shader\+Program}}$>$ glyph\+Shader}
+

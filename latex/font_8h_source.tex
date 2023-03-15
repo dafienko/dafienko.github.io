@@ -1,0 +1,42 @@
+\hypertarget{font_8h_source}{}\doxysection{font.\+h}
+\label{font_8h_source}\index{src/font.h@{src/font.h}}
+\mbox{\hyperlink{font_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <ft2build.h>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ FT\_FREETYPE\_H\ \ }}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <glm/ext.hpp>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <GL/glew.h>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{font_8h_ad4585222552b1d2484b56ad8af9c1b36}{FontFace}}\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{font_8h_ad4585222552b1d2484b56ad8af9c1b36ae7349accb912fab4a91f206cef787249}{Consola}},}
+\DoxyCodeLine{00014\ \};}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_glyph}{Glyph}}\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ glm::vec2\ \mbox{\hyperlink{struct_glyph_a52ce0f88c9200148c6e47564eb803bd2}{texTL}},\ \mbox{\hyperlink{struct_glyph_ac5e63f2378c9e545daa9b6a880152483}{texBR}};}
+\DoxyCodeLine{00018\ \ \ \ \ glm::ivec2\ \mbox{\hyperlink{struct_glyph_aebc61635f9fd1467b3dc9c8faa2bbe87}{glyphSize}};\ \ }
+\DoxyCodeLine{00019\ \ \ \ \ glm::ivec2\ \mbox{\hyperlink{struct_glyph_a4f022ed65ec80da7416ee24a15688777}{tlOffset}};}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_glyph_a9b95d7f77c8eab75d5296be9d7c23478}{advance}};}
+\DoxyCodeLine{00021\ \};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_font}{Font}}\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ std::map<char,\ Glyph>\ glyphData;}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ GLuint\ glyphTexture;}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_font_aa1e2786e1393edf7dc91d9af79b3e0c1}{fontSize}};}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{font_8h_ad4585222552b1d2484b56ad8af9c1b36}{FontFace}}\ \mbox{\hyperlink{class_font_afc76803f612bdb9e82b753784952459a}{fontFace}};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_font}{Font}}(\mbox{\hyperlink{font_8h_ad4585222552b1d2484b56ad8af9c1b36}{FontFace}}\ \mbox{\hyperlink{class_font_afc76803f612bdb9e82b753784952459a}{fontFace}},\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_font_aa1e2786e1393edf7dc91d9af79b3e0c1}{fontSize}},\ FT\_Library\&\ ft);}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_font_a134aaa2f78af0c12d3ce504957169768}{\string~Font}}();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_glyph}{Glyph}}\ \mbox{\hyperlink{class_font_a2c505a62520597b9d303ce2817af50e3}{getGlyph}}(\textcolor{keywordtype}{char}\ c)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ GLuint\ \mbox{\hyperlink{class_font_a65412c08d517953a5c9a49d0dcdb3fa2}{getGlyphTexture}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00036\ \};}
+
+\end{DoxyCode}

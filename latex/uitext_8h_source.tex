@@ -1,0 +1,28 @@
+\hypertarget{uitext_8h_source}{}\doxysection{uitext.\+h}
+\label{uitext_8h_source}\index{src/uitext.h@{src/uitext.h}}
+\mbox{\hyperlink{uitext_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <glm/ext.hpp>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{uiobject_8h}{uiobject.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{font_8h}{font.h}}"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_u_i_text}{UIText}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_u_i_object}{UIObject}}\ \{}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{public}:\ }
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_u_i_text_ab183d2cfdee2f378ced02580285f331a}{UIText}}();}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_u_i_text_ab183d2cfdee2f378ced02580285f331a}{UIText}}(\mbox{\hyperlink{instance_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}}\&\ data);}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_u_i_text_a1ae925f8a22a3f812b36b321af8c154b}{text}}\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ glm::vec3\ \mbox{\hyperlink{class_u_i_text_a8a4c5e0191352c79559a588cea81627e}{textColor}}\ =\ glm::vec3(1);}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_u_i_text_a11c649b676d8509432af4d59f632dd95}{textTransparency}}\ =\ 0;}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{font_8h_ad4585222552b1d2484b56ad8af9c1b36}{FontFace}}\ \mbox{\hyperlink{class_u_i_text_a9ccc10b7f64859f76e4a63cb0c2f2ce9}{font}}\ =\ FontFace::Consola;}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_u_i_text_a4e6f137c995073845218e6d872473670}{textSize}}\ =\ 20;}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ glm::vec2\ \mbox{\hyperlink{class_u_i_text_a09feff9f1373524bd1c292736e9a8bb3}{textAnchorPoint}}\ =\ glm::vec2(.5);}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ glm::vec2\ \mbox{\hyperlink{class_u_i_text_ae0b06a52a2c820f3d19bc217776fd0b9}{textPadding}}\ =\ glm::vec2(0);}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_i_text_a77023705515859d0986321f654f1e230}{render}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00022\ \};}
+
+\end{DoxyCode}

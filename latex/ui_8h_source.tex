@@ -1,0 +1,35 @@
+\hypertarget{ui_8h_source}{}\doxysection{ui.\+h}
+\label{ui_8h_source}\index{src/ui.h@{src/ui.h}}
+\mbox{\hyperlink{ui_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <glm/ext.hpp>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{renderable_8h}{renderable.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{instance_8h}{instance.h}}"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_u_i_object}{UIObject}};}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_u_i}{UI}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_renderable}{Renderable}},\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_instance}{Instance}}\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_i_a2277decc2cba013de2fbb5a64fbc1543}{init}}();}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_i_a173524e42d69f24fd136f2b0bfde7fe6}{destroy}}();}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_i_a43c33287ef234d802a88278f71f3bd0f}{renderUIObjectChildren}}(\mbox{\hyperlink{class_instance}{Instance}}*\ parent,\ glm::vec2\ parentPos,\ glm::vec2\ parentSize);}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{public}:\ }
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_u_i_a86b8015bb557dfaf5eae8064fa594f71}{rendered}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_u_i_a675985a56b5e87ebdc8e5884b9f2ee09}{UI}}();}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_u_i_a675985a56b5e87ebdc8e5884b9f2ee09}{UI}}(\mbox{\hyperlink{instance_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}}\&\ data);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_i_a09aff650942873a075f4a7e47dfb78b2}{render}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_u_i_object}{UIObject}};\ \textcolor{comment}{//\ give\ UIObject\ access\ to\ renderUIObjectChildren}}
+\DoxyCodeLine{00029\ \};}
+
+\end{DoxyCode}

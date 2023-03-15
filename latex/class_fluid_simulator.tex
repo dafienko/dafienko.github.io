@@ -1,0 +1,106 @@
+\hypertarget{class_fluid_simulator}{}\doxysection{Fluid\+Simulator Class Reference}
+\label{class_fluid_simulator}\index{FluidSimulator@{FluidSimulator}}
+
+
+{\ttfamily \#include $<$fluidsimulator.\+h$>$}
+
+
+
+Inheritance diagram for Fluid\+Simulator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{class_fluid_simulator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fluid\+Simulator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{class_fluid_simulator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fluid_simulator_a058324883231ef5fd469f9f5b535c803}{Fluid\+Simulator}} (glm\+::ivec2 \mbox{\hyperlink{class_fluid_simulator_ae5b50cc46badcdd2f1b7dd39de96009e}{simulation\+Size}})
+\item 
+void \mbox{\hyperlink{class_fluid_simulator_aeee3623f547253e98a73681c827671b8}{update}} (float dt)
+\item 
+void \mbox{\hyperlink{class_fluid_simulator_a17d4302438f5ea396919eb107219e865}{bind\+Obstacles\+Texture}} ()
+\item 
+float $\ast$ \mbox{\hyperlink{class_fluid_simulator_af47e95710fe6ac4f7bb9ff9127fe2502}{get\+Velocity\+Buffer}} ()
+\item 
+void \mbox{\hyperlink{class_fluid_simulator_a7abaaf2e294b8f458f3eaaff0cae932c}{render}} () override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_renderable}{Renderable}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_renderable_a7d02709d871bd2bde97d41d933df5adf}{render}} ()=0
+\item 
+virtual \mbox{\hyperlink{class_renderable_a7a10673e331f1f3db760937727441344}{$\sim$\+Renderable}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const glm\+::ivec2 \mbox{\hyperlink{class_fluid_simulator_ae5b50cc46badcdd2f1b7dd39de96009e}{simulation\+Size}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fluid_simulator_a058324883231ef5fd469f9f5b535c803}\label{class_fluid_simulator_a058324883231ef5fd469f9f5b535c803}} 
+\index{FluidSimulator@{FluidSimulator}!FluidSimulator@{FluidSimulator}}
+\index{FluidSimulator@{FluidSimulator}!FluidSimulator@{FluidSimulator}}
+\doxysubsubsection{\texorpdfstring{FluidSimulator()}{FluidSimulator()}}
+{\footnotesize\ttfamily Fluid\+Simulator\+::\+Fluid\+Simulator (\begin{DoxyParamCaption}\item[{glm\+::ivec2}]{simulation\+Size }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fluid_simulator_a17d4302438f5ea396919eb107219e865}\label{class_fluid_simulator_a17d4302438f5ea396919eb107219e865}} 
+\index{FluidSimulator@{FluidSimulator}!bindObstaclesTexture@{bindObstaclesTexture}}
+\index{bindObstaclesTexture@{bindObstaclesTexture}!FluidSimulator@{FluidSimulator}}
+\doxysubsubsection{\texorpdfstring{bindObstaclesTexture()}{bindObstaclesTexture()}}
+{\footnotesize\ttfamily void Fluid\+Simulator\+::bind\+Obstacles\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fluid_simulator_af47e95710fe6ac4f7bb9ff9127fe2502}\label{class_fluid_simulator_af47e95710fe6ac4f7bb9ff9127fe2502}} 
+\index{FluidSimulator@{FluidSimulator}!getVelocityBuffer@{getVelocityBuffer}}
+\index{getVelocityBuffer@{getVelocityBuffer}!FluidSimulator@{FluidSimulator}}
+\doxysubsubsection{\texorpdfstring{getVelocityBuffer()}{getVelocityBuffer()}}
+{\footnotesize\ttfamily float $\ast$ Fluid\+Simulator\+::get\+Velocity\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fluid_simulator_a7abaaf2e294b8f458f3eaaff0cae932c}\label{class_fluid_simulator_a7abaaf2e294b8f458f3eaaff0cae932c}} 
+\index{FluidSimulator@{FluidSimulator}!render@{render}}
+\index{render@{render}!FluidSimulator@{FluidSimulator}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Fluid\+Simulator\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_renderable_a7d02709d871bd2bde97d41d933df5adf}{Renderable}}.
+
+\mbox{\Hypertarget{class_fluid_simulator_aeee3623f547253e98a73681c827671b8}\label{class_fluid_simulator_aeee3623f547253e98a73681c827671b8}} 
+\index{FluidSimulator@{FluidSimulator}!update@{update}}
+\index{update@{update}!FluidSimulator@{FluidSimulator}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Fluid\+Simulator\+::update (\begin{DoxyParamCaption}\item[{float}]{dt }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_fluid_simulator_ae5b50cc46badcdd2f1b7dd39de96009e}\label{class_fluid_simulator_ae5b50cc46badcdd2f1b7dd39de96009e}} 
+\index{FluidSimulator@{FluidSimulator}!simulationSize@{simulationSize}}
+\index{simulationSize@{simulationSize}!FluidSimulator@{FluidSimulator}}
+\doxysubsubsection{\texorpdfstring{simulationSize}{simulationSize}}
+{\footnotesize\ttfamily const glm\+::ivec2 Fluid\+Simulator\+::simulation\+Size}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{fluidsimulator_8h}{fluidsimulator.\+h}}\item 
+src/\mbox{\hyperlink{fluidsimulator_8cpp}{fluidsimulator.\+cpp}}\end{DoxyCompactItemize}

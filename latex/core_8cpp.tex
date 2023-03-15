@@ -1,0 +1,86 @@
+\hypertarget{core_8cpp}{}\doxysection{src/core.cpp File Reference}
+\label{core_8cpp}\index{src/core.cpp@{src/core.cpp}}
+{\ttfamily \#include $<$GL/glew.\+h$>$}\newline
+{\ttfamily \#include $<$GLFW/glfw3.\+h$>$}\newline
+{\ttfamily \#include $<$glm/ext.\+hpp$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}window.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}simulation.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}core.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}quad.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}text.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}rendertarget.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}fluidsimulator.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ui.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}uiframe.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}uitext.\+h\char`\"{}}\newline
+Include dependency graph for core.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{core_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{core_8cpp_abe4491f99c39137d17bdc525af130464}{check\+GLErrors}} (const std\+::string \&file, int line)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+glm\+::ivec2 \mbox{\hyperlink{core_8cpp_af6ec1beebd82bdc394aab54870380916}{window\+Size}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_simulation}{Simulation}} $>$ \mbox{\hyperlink{core_8cpp_ab70bfad4a612008f75bd058a276a926e}{simulation}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_u_i}{UI}} $>$ \mbox{\hyperlink{core_8cpp_ac2181571c838bfd3070a7ab58c3b916e}{ui}}
+\item 
+bool \mbox{\hyperlink{core_8cpp_abddd233f1ce4c12ce3ea9f684591ad5a}{mouse1\+Down}} = false
+\item 
+bool \mbox{\hyperlink{core_8cpp_a334d751efe24396c107096c3e1a8d7ed}{mouse2\+Down}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{core_8cpp_abe4491f99c39137d17bdc525af130464}\label{core_8cpp_abe4491f99c39137d17bdc525af130464}} 
+\index{core.cpp@{core.cpp}!checkGLErrors@{checkGLErrors}}
+\index{checkGLErrors@{checkGLErrors}!core.cpp@{core.cpp}}
+\doxysubsubsection{\texorpdfstring{checkGLErrors()}{checkGLErrors()}}
+{\footnotesize\ttfamily void check\+GLErrors (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file,  }\item[{int}]{line }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{core_8cpp_abddd233f1ce4c12ce3ea9f684591ad5a}\label{core_8cpp_abddd233f1ce4c12ce3ea9f684591ad5a}} 
+\index{core.cpp@{core.cpp}!mouse1Down@{mouse1Down}}
+\index{mouse1Down@{mouse1Down}!core.cpp@{core.cpp}}
+\doxysubsubsection{\texorpdfstring{mouse1Down}{mouse1Down}}
+{\footnotesize\ttfamily bool mouse1\+Down = false}
+
+\mbox{\Hypertarget{core_8cpp_a334d751efe24396c107096c3e1a8d7ed}\label{core_8cpp_a334d751efe24396c107096c3e1a8d7ed}} 
+\index{core.cpp@{core.cpp}!mouse2Down@{mouse2Down}}
+\index{mouse2Down@{mouse2Down}!core.cpp@{core.cpp}}
+\doxysubsubsection{\texorpdfstring{mouse2Down}{mouse2Down}}
+{\footnotesize\ttfamily bool mouse2\+Down = false}
+
+\mbox{\Hypertarget{core_8cpp_ab70bfad4a612008f75bd058a276a926e}\label{core_8cpp_ab70bfad4a612008f75bd058a276a926e}} 
+\index{core.cpp@{core.cpp}!simulation@{simulation}}
+\index{simulation@{simulation}!core.cpp@{core.cpp}}
+\doxysubsubsection{\texorpdfstring{simulation}{simulation}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_simulation}{Simulation}}$>$ simulation}
+
+\mbox{\Hypertarget{core_8cpp_ac2181571c838bfd3070a7ab58c3b916e}\label{core_8cpp_ac2181571c838bfd3070a7ab58c3b916e}} 
+\index{core.cpp@{core.cpp}!ui@{ui}}
+\index{ui@{ui}!core.cpp@{core.cpp}}
+\doxysubsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_u_i}{UI}}$>$ ui}
+
+\mbox{\Hypertarget{core_8cpp_af6ec1beebd82bdc394aab54870380916}\label{core_8cpp_af6ec1beebd82bdc394aab54870380916}} 
+\index{core.cpp@{core.cpp}!windowSize@{windowSize}}
+\index{windowSize@{windowSize}!core.cpp@{core.cpp}}
+\doxysubsubsection{\texorpdfstring{windowSize}{windowSize}}
+{\footnotesize\ttfamily glm\+::ivec2 window\+Size}
+

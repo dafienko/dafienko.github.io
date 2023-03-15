@@ -1,0 +1,34 @@
+\hypertarget{rendertarget_8h_source}{}\doxysection{rendertarget.\+h}
+\label{rendertarget_8h_source}\index{src/rendertarget.h@{src/rendertarget.h}}
+\mbox{\hyperlink{rendertarget_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once\ }}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <GL/glew.h>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{shader_8h}{shader.h}}"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_render_target}{RenderTarget}}\ \{}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{public}:\ }
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_render_target_afaa4541dcafceecc89dd9452e0650cb3}{bindDefault}}();}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ width,\ height;}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ GLuint\ fbo,\ textureColorbuffer,\ rbo;}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_render_target}{RenderTarget}}(\textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height);}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_render_target}{RenderTarget}}(\textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height,\ GLint\ internalFormat,\ GLint\ texFilterType);}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_render_target_a5c8ef0f2c9e46ed80e5e3ce6e5567b8b}{\string~RenderTarget}}();}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_render_target_a1021b06f0d4a0e45f5ad8dc4d8abebe0}{setSize}}(\textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height);}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_render_target_ad3be95ab0face573601ed15eecb7beef}{bind}}();}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_render_target_a593fd91dff1e2b7dd4f6ef7cafac3c2a}{bindAsTexture}}();}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_render_target_a593fd91dff1e2b7dd4f6ef7cafac3c2a}{bindAsTexture}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ textureName,\ GLuint\ program);}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_render_target_a593fd91dff1e2b7dd4f6ef7cafac3c2a}{bindAsTexture}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ textureName,\ GLuint\ program,\ GLint\ location);}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_render_target_aff917324e0e420c0780f4bf64cd3aafe}{clear}}(\textcolor{keywordtype}{int}\ buffersToClear);}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_render_target_a58d6dbef4741c4f3cabcd85d77368b9c}{renderToQuad}}();}
+\DoxyCodeLine{00028\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,27 @@
+\hypertarget{simulation_8h_source}{}\doxysection{simulation.\+h}
+\label{simulation_8h_source}\index{src/simulation.h@{src/simulation.h}}
+\mbox{\hyperlink{simulation_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <glm/ext.hpp>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{renderable_8h}{renderable.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{fluidsimulator_8h}{fluidsimulator.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{particlesimulator_8h}{particlesimulator.h}}"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_simulation}{Simulation}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_renderable}{Renderable}}\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_fluid_simulator}{FluidSimulator}}\ fluidSimulator;}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_particle_simulator}{ParticleSimulator}}\ particleSimulator;}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{public}:\ }
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ glm::ivec2\ \mbox{\hyperlink{class_simulation_a223fe61f314d2cd2ea64cf0e14f834c2}{simulationSize}};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_simulation}{Simulation}}(glm::ivec2\ \mbox{\hyperlink{class_simulation_a223fe61f314d2cd2ea64cf0e14f834c2}{simulationSize}});}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_simulation_a6ab3e08e9daccf5a82d449950e2b919e}{update}}(\textcolor{keywordtype}{float}\ dt);}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_simulation_ad07475fd3e15b45cb0cd79f5d282d378}{render}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00021\ \};}
+
+\end{DoxyCode}

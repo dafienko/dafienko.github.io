@@ -1,0 +1,98 @@
+\hypertarget{class_event}{}\doxysection{Event\texorpdfstring{$<$}{<} Args \texorpdfstring{$>$}{>} Class Template Reference}
+\label{class_event}\index{Event$<$ Args $>$@{Event$<$ Args $>$}}
+
+
+{\ttfamily \#include $<$event.\+h$>$}
+
+
+
+Collaboration diagram for Event\texorpdfstring{$<$}{<} Args \texorpdfstring{$>$}{>}\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{class_event__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_event_1_1_event_listener}{Event\+Listener}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_event_a6341f64eac001da3458910e4a4c89ad9}{Event}} ()
+\item 
+void \mbox{\hyperlink{class_event_a1cf538b7f7c36ee9ad48763f61add989}{bind}} (std\+::function$<$ void(Args...)$>$ callback)
+\item 
+void \mbox{\hyperlink{class_event_aa8ff356df70c0fea3eb9745c9df68a41}{fire}} (Args \&...args)
+\item 
+\mbox{\hyperlink{class_event_a2e9d7e609dcb0c41d78d586517ebe2a6}{$\sim$\+Event}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_event_af43fb5adca7baa75816b952b1d719659}{disconnect}} (\mbox{\hyperlink{class_event_1_1_event_listener}{Event\+Listener}} \&listener)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_event_a472874c5724681afe45342d8f7ccfe81}{Event\+Listener}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_event_a6341f64eac001da3458910e4a4c89ad9}\label{class_event_a6341f64eac001da3458910e4a4c89ad9}} 
+\index{Event$<$ Args $>$@{Event$<$ Args $>$}!Event@{Event}}
+\index{Event@{Event}!Event$<$ Args $>$@{Event$<$ Args $>$}}
+\doxysubsubsection{\texorpdfstring{Event()}{Event()}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+\mbox{\hyperlink{class_event}{Event}}$<$ Args $>$\mbox{\hyperlink{class_event}{\+::\+Event}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_event_a2e9d7e609dcb0c41d78d586517ebe2a6}\label{class_event_a2e9d7e609dcb0c41d78d586517ebe2a6}} 
+\index{Event$<$ Args $>$@{Event$<$ Args $>$}!````~Event@{$\sim$Event}}
+\index{````~Event@{$\sim$Event}!Event$<$ Args $>$@{Event$<$ Args $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$Event()}{~Event()}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+\mbox{\hyperlink{class_event}{Event}}$<$ Args $>$\+::$\sim$\mbox{\hyperlink{class_event}{Event}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_event_a1cf538b7f7c36ee9ad48763f61add989}\label{class_event_a1cf538b7f7c36ee9ad48763f61add989}} 
+\index{Event$<$ Args $>$@{Event$<$ Args $>$}!bind@{bind}}
+\index{bind@{bind}!Event$<$ Args $>$@{Event$<$ Args $>$}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+void \mbox{\hyperlink{class_event}{Event}}$<$ Args $>$\+::bind (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(Args...)$>$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_event_af43fb5adca7baa75816b952b1d719659}\label{class_event_af43fb5adca7baa75816b952b1d719659}} 
+\index{Event$<$ Args $>$@{Event$<$ Args $>$}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!Event$<$ Args $>$@{Event$<$ Args $>$}}
+\doxysubsubsection{\texorpdfstring{disconnect()}{disconnect()}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+void \mbox{\hyperlink{class_event}{Event}}$<$ Args $>$\+::disconnect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_event_1_1_event_listener}{Event\+Listener}} \&}]{listener }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_event_aa8ff356df70c0fea3eb9745c9df68a41}\label{class_event_aa8ff356df70c0fea3eb9745c9df68a41}} 
+\index{Event$<$ Args $>$@{Event$<$ Args $>$}!fire@{fire}}
+\index{fire@{fire}!Event$<$ Args $>$@{Event$<$ Args $>$}}
+\doxysubsubsection{\texorpdfstring{fire()}{fire()}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+void \mbox{\hyperlink{class_event}{Event}}$<$ Args $>$\+::fire (\begin{DoxyParamCaption}\item[{Args \&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_event_a472874c5724681afe45342d8f7ccfe81}\label{class_event_a472874c5724681afe45342d8f7ccfe81}} 
+\index{Event$<$ Args $>$@{Event$<$ Args $>$}!EventListener@{EventListener}}
+\index{EventListener@{EventListener}!Event$<$ Args $>$@{Event$<$ Args $>$}}
+\doxysubsubsection{\texorpdfstring{EventListener}{EventListener}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+friend class \mbox{\hyperlink{class_event_1_1_event_listener}{Event\+Listener}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{event_8h}{event.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,110 @@
+\hypertarget{namespace_core}{}\doxysection{Core Namespace Reference}
+\label{namespace_core}\index{Core@{Core}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_core_a8820d2f818a23d0dc773787354bbf73f}{init}} (int width, int height)
+\item 
+void \mbox{\hyperlink{namespace_core_a1a7af92bfcdd5b7ee7cfa99b2503ac67}{update}} (float dt)
+\item 
+void \mbox{\hyperlink{namespace_core_a818e02782f3ebdd642cddcb1c666bced}{render}} ()
+\item 
+void \mbox{\hyperlink{namespace_core_a0c82c0fd87b8a983c50d21340d0e01ef}{resize}} (int width, int height)
+\item 
+glm\+::ivec2 \mbox{\hyperlink{namespace_core_a12dc25a2bc697bb3809e95f595a6f63c}{get\+Window\+Size}} ()
+\item 
+glm\+::vec2 \mbox{\hyperlink{namespace_core_a90d2b75c060a6323a77d8aad53a74d5c}{get\+Mouse\+Position}} ()
+\item 
+bool \mbox{\hyperlink{namespace_core_a1fbd702b16e1330ac764d062d6785ce0}{is\+Mouse1\+Down}} ()
+\item 
+bool \mbox{\hyperlink{namespace_core_aac4e32837f00d58b882dab8dd26e133c}{is\+Mouse2\+Down}} ()
+\item 
+void \mbox{\hyperlink{namespace_core_acfd5c914674dee64384b7f8ac9651770}{destroy}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_event}{Event}}$<$ int, int, int $>$ $>$ \mbox{\hyperlink{namespace_core_a4f60ea5a549cf25aa950226ab9492107}{key\+Event}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_event}{Event}}$<$ double, double $>$ $>$ \mbox{\hyperlink{namespace_core_a11cb31bfafca854df31020cb2f2ee466}{mouse\+Move\+Event}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_event}{Event}}$<$ int, int, int $>$ $>$ \mbox{\hyperlink{namespace_core_a7fa38b52c9001d1937cbe2bd5bc6413c}{mouse\+Button\+Event}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_core_acfd5c914674dee64384b7f8ac9651770}\label{namespace_core_acfd5c914674dee64384b7f8ac9651770}} 
+\index{Core@{Core}!destroy@{destroy}}
+\index{destroy@{destroy}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void Core\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_core_a90d2b75c060a6323a77d8aad53a74d5c}\label{namespace_core_a90d2b75c060a6323a77d8aad53a74d5c}} 
+\index{Core@{Core}!getMousePosition@{getMousePosition}}
+\index{getMousePosition@{getMousePosition}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{getMousePosition()}{getMousePosition()}}
+{\footnotesize\ttfamily glm\+::vec2 Core\+::get\+Mouse\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_core_a12dc25a2bc697bb3809e95f595a6f63c}\label{namespace_core_a12dc25a2bc697bb3809e95f595a6f63c}} 
+\index{Core@{Core}!getWindowSize@{getWindowSize}}
+\index{getWindowSize@{getWindowSize}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{getWindowSize()}{getWindowSize()}}
+{\footnotesize\ttfamily glm\+::ivec2 Core\+::get\+Window\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_core_a8820d2f818a23d0dc773787354bbf73f}\label{namespace_core_a8820d2f818a23d0dc773787354bbf73f}} 
+\index{Core@{Core}!init@{init}}
+\index{init@{init}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Core\+::init (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_core_a1fbd702b16e1330ac764d062d6785ce0}\label{namespace_core_a1fbd702b16e1330ac764d062d6785ce0}} 
+\index{Core@{Core}!isMouse1Down@{isMouse1Down}}
+\index{isMouse1Down@{isMouse1Down}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{isMouse1Down()}{isMouse1Down()}}
+{\footnotesize\ttfamily bool Core\+::is\+Mouse1\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_core_aac4e32837f00d58b882dab8dd26e133c}\label{namespace_core_aac4e32837f00d58b882dab8dd26e133c}} 
+\index{Core@{Core}!isMouse2Down@{isMouse2Down}}
+\index{isMouse2Down@{isMouse2Down}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{isMouse2Down()}{isMouse2Down()}}
+{\footnotesize\ttfamily bool Core\+::is\+Mouse2\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_core_a818e02782f3ebdd642cddcb1c666bced}\label{namespace_core_a818e02782f3ebdd642cddcb1c666bced}} 
+\index{Core@{Core}!render@{render}}
+\index{render@{render}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Core\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_core_a0c82c0fd87b8a983c50d21340d0e01ef}\label{namespace_core_a0c82c0fd87b8a983c50d21340d0e01ef}} 
+\index{Core@{Core}!resize@{resize}}
+\index{resize@{resize}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily void Core\+::resize (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_core_a1a7af92bfcdd5b7ee7cfa99b2503ac67}\label{namespace_core_a1a7af92bfcdd5b7ee7cfa99b2503ac67}} 
+\index{Core@{Core}!update@{update}}
+\index{update@{update}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Core\+::update (\begin{DoxyParamCaption}\item[{float}]{dt }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespace_core_a4f60ea5a549cf25aa950226ab9492107}\label{namespace_core_a4f60ea5a549cf25aa950226ab9492107}} 
+\index{Core@{Core}!keyEvent@{keyEvent}}
+\index{keyEvent@{keyEvent}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{keyEvent}{keyEvent}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_event}{Event}}$<$ int, int, int $>$ $>$ Core\+::key\+Event\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{namespace_core_a7fa38b52c9001d1937cbe2bd5bc6413c}\label{namespace_core_a7fa38b52c9001d1937cbe2bd5bc6413c}} 
+\index{Core@{Core}!mouseButtonEvent@{mouseButtonEvent}}
+\index{mouseButtonEvent@{mouseButtonEvent}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{mouseButtonEvent}{mouseButtonEvent}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_event}{Event}}$<$ int, int, int $>$ $>$ Core\+::mouse\+Button\+Event\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{namespace_core_a11cb31bfafca854df31020cb2f2ee466}\label{namespace_core_a11cb31bfafca854df31020cb2f2ee466}} 
+\index{Core@{Core}!mouseMoveEvent@{mouseMoveEvent}}
+\index{mouseMoveEvent@{mouseMoveEvent}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{mouseMoveEvent}{mouseMoveEvent}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_event}{Event}}$<$ double, double $>$ $>$ Core\+::mouse\+Move\+Event\hspace{0.3cm}{\ttfamily [extern]}}
+

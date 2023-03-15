@@ -1,0 +1,22 @@
+\hypertarget{shader_8h_source}{}\doxysection{shader.\+h}
+\label{shader_8h_source}\index{src/shader.h@{src/shader.h}}
+\mbox{\hyperlink{shader_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <GL/glew.h>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_shader_program}{ShaderProgram}}\ \{}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00007\ \ \ \ \ \ \ \ \ GLuint\ program;}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ GLuint\ vertex\_shader,\ fragment\_shader;}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shader_program}{ShaderProgram}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ vs\_filename,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ fs\_filename);}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shader_program}{ShaderProgram}}(\textcolor{keyword}{const}\ std::string\ \&vs\_filename,\ \textcolor{keyword}{const}\ std::string\ \&fs\_filename);}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shader_program_a2d2eadcfc48cc2e2ddb82aba70553a9f}{\string~ShaderProgram}}();}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ GLuint\ \mbox{\hyperlink{class_shader_program_ac77ba68228b9976461c1bda0dd4496d0}{getProgram}}();}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_shader_program_ab3c3e75ddf54504b5e9f53bf85c34736}{bind}}();}
+\DoxyCodeLine{00016\ \};}
+
+\end{DoxyCode}

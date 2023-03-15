@@ -1,0 +1,54 @@
+\hypertarget{instance_8h_source}{}\doxysection{instance.\+h}
+\label{instance_8h_source}\index{src/instance.h@{src/instance.h}}
+\mbox{\hyperlink{instance_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <nlohmann/json.hpp>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{event_8h}{event.h}}"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{using\ }\mbox{\hyperlink{instance_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}}\ =\ nlohmann::json;\ }
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_instance}{Instance}}\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{class_instance_ab62acbe83702c166f536020bfa3ecb7a}{InstanceClass}}\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_instance_ab62acbe83702c166f536020bfa3ecb7aa75b9380441cd59394cd3b642557c7b5c}{IC\_UI}},}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_instance_ab62acbe83702c166f536020bfa3ecb7aa1abb6e27d877ed703b33a5db337d6555}{IC\_UIObject}},}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_instance_ab62acbe83702c166f536020bfa3ecb7aaba9787b39b4841f56a8b37e5ee32da22}{IC\_UIFrame}},}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_instance_ab62acbe83702c166f536020bfa3ecb7aaef1b574e73647dd1823ddb6a2c3a4760}{IC\_UIText}},}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_instance}{Instance}}*\ \mbox{\hyperlink{class_instance_aed392ae017144af74f0ff3b396d019bf}{fromJSON}}(\textcolor{keyword}{const}\ std::string\ path);}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ std::vector<Instance*>\ children;}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_instance}{Instance}}*\ parent\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_event}{Event<Instance\&,\ Instance\&>}}\ childAdded;}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_event}{Event<Instance\&,\ Instance\&>}}\ childRemoved;}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ addChild(\mbox{\hyperlink{class_instance}{Instance}}\&\ child);}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ removeChild(\mbox{\hyperlink{class_instance}{Instance}}\&\ child);}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_instance_ab62acbe83702c166f536020bfa3ecb7a}{InstanceClass}}\ \mbox{\hyperlink{class_instance_ac72836ec7ef0fab6df04bc8d7d1909c3}{type}};}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_instance_a80e29939a8dac12ad5d8008f3df241af}{name}}\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_instance_a8342fdef38b475586d3e84fea665b001}{onChildAdded}}(std::function<\textcolor{keywordtype}{void}(\mbox{\hyperlink{class_instance}{Instance}}\&,\ \mbox{\hyperlink{class_instance}{Instance}}\&)>\ callback);}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_instance_a70c2e77aa36184023eae992e490a0249}{onChildRemoved}}(std::function<\textcolor{keywordtype}{void}(\mbox{\hyperlink{class_instance}{Instance}}\&,\ \mbox{\hyperlink{class_instance}{Instance}}\&)>\ callback);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_instance}{Instance}}(\mbox{\hyperlink{class_instance_ab62acbe83702c166f536020bfa3ecb7a}{InstanceClass}}\ \mbox{\hyperlink{class_instance_ac72836ec7ef0fab6df04bc8d7d1909c3}{type}},\ std::string\ \mbox{\hyperlink{class_instance_a80e29939a8dac12ad5d8008f3df241af}{name}});}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_instance_add424275e3aa71d46989b5aff20d093c}{setParent}}(\mbox{\hyperlink{class_instance}{Instance}}*\ parent);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ std::vector<Instance*>\ \mbox{\hyperlink{class_instance_a785f0f81050edd44387b09f30c68ecc5}{getChildren}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_instance}{Instance}}*\ \mbox{\hyperlink{class_instance_ae999c5d80560b6137dd7b939db702bd8}{findChild}}(std::string\ \mbox{\hyperlink{class_instance_a80e29939a8dac12ad5d8008f3df241af}{name}})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_instance}{Instance}}*\ \mbox{\hyperlink{class_instance_a04b7d6516185e8477b249c4e07fa6817}{getChild}}(std::string\ \mbox{\hyperlink{class_instance_a80e29939a8dac12ad5d8008f3df241af}{name}})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_instance_a6e6f2ab25aa37838f8c4af014f663117}{\string~Instance}}();}
+\DoxyCodeLine{00048\ \};}
+
+\end{DoxyCode}

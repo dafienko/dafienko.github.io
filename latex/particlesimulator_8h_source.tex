@@ -1,0 +1,69 @@
+\hypertarget{particlesimulator_8h_source}{}\doxysection{particlesimulator.\+h}
+\label{particlesimulator_8h_source}\index{src/particlesimulator.h@{src/particlesimulator.h}}
+\mbox{\hyperlink{particlesimulator_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once\ }}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <GL/glew.h>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <glm/ext.hpp>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{shader_8h}{shader.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{rendertargetarray_8h}{rendertargetarray.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ui_8h}{ui.h}}"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_particle_simulator}{ParticleSimulator}}\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{private}:\ }
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum}\ ParticleType\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \ \ \ \ Air,}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \ \ \ \ Wall,}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ Sand,}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ Water,}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ Test}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }Particle\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ ParticleType\ type;}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ updated;}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ std::unique\_ptr<Particle>\ grid;}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ std::unique\_ptr<ParticleType>\ byteBuffer;}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ std::unique\_ptr<UI>\ ui;}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shader_program}{ShaderProgram}}\ particlesShader;}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shader_program}{ShaderProgram}}\ obstaclesShader;}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_render_target_array}{RenderTargetArray}}\ particlesTargets;}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ GLuint\ textureColorBuffer;}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ brushRadius\ =\ 5;}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ ParticleType\ selectedParticleType\ =\ Sand;}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ updateParticles(\textcolor{keywordtype}{float}*\ fluidVelocityBuffer);}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ updateParticlesTexture();}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ inBounds(glm::ivec2\ pos);}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ isEmpty(glm::ivec2\ pos);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ Particle\ particleGet(glm::ivec2\ pos);}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ particleSet(glm::ivec2\ pos,\ Particle\ particle);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ glm::ivec2\ screenPosToGridPos(glm::vec2\ screenPos);}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ glm::vec2\ sampleVelocityBuffer(\textcolor{keywordtype}{float}*\ fluidVelocityBuffer,\ glm::ivec2\ pos);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ selectParticleType(ParticleType\ type);}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{public}:\ }
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ glm::ivec2\ \mbox{\hyperlink{class_particle_simulator_accb3ba69fdb3b17f44e335d325864708}{simulationSize}};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_particle_simulator}{ParticleSimulator}}(glm::ivec2\ \mbox{\hyperlink{class_particle_simulator_accb3ba69fdb3b17f44e335d325864708}{simulationSize}});}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_particle_simulator_aa9585a4a5c77bcf52f309b6c52f4af3d}{update}}(\textcolor{keywordtype}{float}\ dt,\ \textcolor{keywordtype}{float}*\ fluidVelocityBuffer);}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_particle_simulator_ad5b5c89df6cdbfb4581e9b84f3b7eded}{renderObstacles}}();}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_particle_simulator_afb113c8569d005637d40cac9dded1b18}{render}}();}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_particle_simulator_a97922ee96710a6ff551ae414d858e690}{\string~ParticleSimulator}}();}
+\DoxyCodeLine{00063\ \};}
+
+\end{DoxyCode}

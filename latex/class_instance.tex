@@ -1,0 +1,174 @@
+\hypertarget{class_instance}{}\doxysection{Instance Class Reference}
+\label{class_instance}\index{Instance@{Instance}}
+
+
+{\ttfamily \#include $<$instance.\+h$>$}
+
+
+
+Inheritance diagram for Instance\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_instance__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Instance\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{class_instance__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_instance_ab62acbe83702c166f536020bfa3ecb7a}{Instance\+Class}} \{ \mbox{\hyperlink{class_instance_ab62acbe83702c166f536020bfa3ecb7aa75b9380441cd59394cd3b642557c7b5c}{IC\+\_\+\+UI}}
+, \mbox{\hyperlink{class_instance_ab62acbe83702c166f536020bfa3ecb7aa1abb6e27d877ed703b33a5db337d6555}{IC\+\_\+\+UIObject}}
+, \mbox{\hyperlink{class_instance_ab62acbe83702c166f536020bfa3ecb7aaba9787b39b4841f56a8b37e5ee32da22}{IC\+\_\+\+UIFrame}}
+, \mbox{\hyperlink{class_instance_ab62acbe83702c166f536020bfa3ecb7aaef1b574e73647dd1823ddb6a2c3a4760}{IC\+\_\+\+UIText}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_instance_a8342fdef38b475586d3e84fea665b001}{on\+Child\+Added}} (std\+::function$<$ void(\mbox{\hyperlink{class_instance}{Instance}} \&, \mbox{\hyperlink{class_instance}{Instance}} \&)$>$ callback)
+\item 
+void \mbox{\hyperlink{class_instance_a70c2e77aa36184023eae992e490a0249}{on\+Child\+Removed}} (std\+::function$<$ void(\mbox{\hyperlink{class_instance}{Instance}} \&, \mbox{\hyperlink{class_instance}{Instance}} \&)$>$ callback)
+\item 
+\mbox{\hyperlink{class_instance_ab93c6f13492d4a5e34eb95e30c080fc8}{Instance}} (\mbox{\hyperlink{class_instance_ab62acbe83702c166f536020bfa3ecb7a}{Instance\+Class}} \mbox{\hyperlink{class_instance_ac72836ec7ef0fab6df04bc8d7d1909c3}{type}}, std\+::string \mbox{\hyperlink{class_instance_a80e29939a8dac12ad5d8008f3df241af}{name}})
+\item 
+void \mbox{\hyperlink{class_instance_add424275e3aa71d46989b5aff20d093c}{set\+Parent}} (\mbox{\hyperlink{class_instance}{Instance}} $\ast$parent)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_instance}{Instance}} $\ast$ $>$ \mbox{\hyperlink{class_instance_a785f0f81050edd44387b09f30c68ecc5}{get\+Children}} () const
+\item 
+\mbox{\hyperlink{class_instance}{Instance}} $\ast$ \mbox{\hyperlink{class_instance_ae999c5d80560b6137dd7b939db702bd8}{find\+Child}} (std\+::string \mbox{\hyperlink{class_instance_a80e29939a8dac12ad5d8008f3df241af}{name}}) const
+\item 
+\mbox{\hyperlink{class_instance}{Instance}} $\ast$ \mbox{\hyperlink{class_instance_a04b7d6516185e8477b249c4e07fa6817}{get\+Child}} (std\+::string \mbox{\hyperlink{class_instance_a80e29939a8dac12ad5d8008f3df241af}{name}}) const
+\item 
+virtual \mbox{\hyperlink{class_instance_a6e6f2ab25aa37838f8c4af014f663117}{$\sim$\+Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_instance}{Instance}} $\ast$ \mbox{\hyperlink{class_instance_aed392ae017144af74f0ff3b396d019bf}{from\+JSON}} (const std\+::string path)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_instance_ab62acbe83702c166f536020bfa3ecb7a}{Instance\+Class}} \mbox{\hyperlink{class_instance_ac72836ec7ef0fab6df04bc8d7d1909c3}{type}}
+\item 
+std\+::string \mbox{\hyperlink{class_instance_a80e29939a8dac12ad5d8008f3df241af}{name}} = \char`\"{}\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_instance_ab62acbe83702c166f536020bfa3ecb7a}\label{class_instance_ab62acbe83702c166f536020bfa3ecb7a}} 
+\index{Instance@{Instance}!InstanceClass@{InstanceClass}}
+\index{InstanceClass@{InstanceClass}!Instance@{Instance}}
+\doxysubsubsection{\texorpdfstring{InstanceClass}{InstanceClass}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_instance_ab62acbe83702c166f536020bfa3ecb7a}{Instance\+::\+Instance\+Class}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IC\_UI@{IC\_UI}!Instance@{Instance}}\index{Instance@{Instance}!IC\_UI@{IC\_UI}}}\mbox{\Hypertarget{class_instance_ab62acbe83702c166f536020bfa3ecb7aa75b9380441cd59394cd3b642557c7b5c}\label{class_instance_ab62acbe83702c166f536020bfa3ecb7aa75b9380441cd59394cd3b642557c7b5c}} 
+IC\+\_\+\+UI&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IC\_UIObject@{IC\_UIObject}!Instance@{Instance}}\index{Instance@{Instance}!IC\_UIObject@{IC\_UIObject}}}\mbox{\Hypertarget{class_instance_ab62acbe83702c166f536020bfa3ecb7aa1abb6e27d877ed703b33a5db337d6555}\label{class_instance_ab62acbe83702c166f536020bfa3ecb7aa1abb6e27d877ed703b33a5db337d6555}} 
+IC\+\_\+\+UIObject&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IC\_UIFrame@{IC\_UIFrame}!Instance@{Instance}}\index{Instance@{Instance}!IC\_UIFrame@{IC\_UIFrame}}}\mbox{\Hypertarget{class_instance_ab62acbe83702c166f536020bfa3ecb7aaba9787b39b4841f56a8b37e5ee32da22}\label{class_instance_ab62acbe83702c166f536020bfa3ecb7aaba9787b39b4841f56a8b37e5ee32da22}} 
+IC\+\_\+\+UIFrame&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IC\_UIText@{IC\_UIText}!Instance@{Instance}}\index{Instance@{Instance}!IC\_UIText@{IC\_UIText}}}\mbox{\Hypertarget{class_instance_ab62acbe83702c166f536020bfa3ecb7aaef1b574e73647dd1823ddb6a2c3a4760}\label{class_instance_ab62acbe83702c166f536020bfa3ecb7aaef1b574e73647dd1823ddb6a2c3a4760}} 
+IC\+\_\+\+UIText&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_instance_ab93c6f13492d4a5e34eb95e30c080fc8}\label{class_instance_ab93c6f13492d4a5e34eb95e30c080fc8}} 
+\index{Instance@{Instance}!Instance@{Instance}}
+\index{Instance@{Instance}!Instance@{Instance}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily Instance\+::\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_instance_ab62acbe83702c166f536020bfa3ecb7a}{Instance\+Class}}}]{type,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_instance_a6e6f2ab25aa37838f8c4af014f663117}\label{class_instance_a6e6f2ab25aa37838f8c4af014f663117}} 
+\index{Instance@{Instance}!````~Instance@{$\sim$Instance}}
+\index{````~Instance@{$\sim$Instance}!Instance@{Instance}}
+\doxysubsubsection{\texorpdfstring{$\sim$Instance()}{~Instance()}}
+{\footnotesize\ttfamily Instance\+::$\sim$\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_instance_ae999c5d80560b6137dd7b939db702bd8}\label{class_instance_ae999c5d80560b6137dd7b939db702bd8}} 
+\index{Instance@{Instance}!findChild@{findChild}}
+\index{findChild@{findChild}!Instance@{Instance}}
+\doxysubsubsection{\texorpdfstring{findChild()}{findChild()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_instance}{Instance}} $\ast$ Instance\+::find\+Child (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_instance_aed392ae017144af74f0ff3b396d019bf}\label{class_instance_aed392ae017144af74f0ff3b396d019bf}} 
+\index{Instance@{Instance}!fromJSON@{fromJSON}}
+\index{fromJSON@{fromJSON}!Instance@{Instance}}
+\doxysubsubsection{\texorpdfstring{fromJSON()}{fromJSON()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_instance}{Instance}} $\ast$ Instance\+::from\+JSON (\begin{DoxyParamCaption}\item[{const std\+::string}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_instance_a04b7d6516185e8477b249c4e07fa6817}\label{class_instance_a04b7d6516185e8477b249c4e07fa6817}} 
+\index{Instance@{Instance}!getChild@{getChild}}
+\index{getChild@{getChild}!Instance@{Instance}}
+\doxysubsubsection{\texorpdfstring{getChild()}{getChild()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_instance}{Instance}} $\ast$ Instance\+::get\+Child (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_instance_a785f0f81050edd44387b09f30c68ecc5}\label{class_instance_a785f0f81050edd44387b09f30c68ecc5}} 
+\index{Instance@{Instance}!getChildren@{getChildren}}
+\index{getChildren@{getChildren}!Instance@{Instance}}
+\doxysubsubsection{\texorpdfstring{getChildren()}{getChildren()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_instance}{Instance}} $\ast$ $>$ Instance\+::get\+Children (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_instance_a8342fdef38b475586d3e84fea665b001}\label{class_instance_a8342fdef38b475586d3e84fea665b001}} 
+\index{Instance@{Instance}!onChildAdded@{onChildAdded}}
+\index{onChildAdded@{onChildAdded}!Instance@{Instance}}
+\doxysubsubsection{\texorpdfstring{onChildAdded()}{onChildAdded()}}
+{\footnotesize\ttfamily void Instance\+::on\+Child\+Added (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(\mbox{\hyperlink{class_instance}{Instance}} \&, \mbox{\hyperlink{class_instance}{Instance}} \&)$>$}]{callback }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_instance_a70c2e77aa36184023eae992e490a0249}\label{class_instance_a70c2e77aa36184023eae992e490a0249}} 
+\index{Instance@{Instance}!onChildRemoved@{onChildRemoved}}
+\index{onChildRemoved@{onChildRemoved}!Instance@{Instance}}
+\doxysubsubsection{\texorpdfstring{onChildRemoved()}{onChildRemoved()}}
+{\footnotesize\ttfamily void Instance\+::on\+Child\+Removed (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(\mbox{\hyperlink{class_instance}{Instance}} \&, \mbox{\hyperlink{class_instance}{Instance}} \&)$>$}]{callback }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_instance_add424275e3aa71d46989b5aff20d093c}\label{class_instance_add424275e3aa71d46989b5aff20d093c}} 
+\index{Instance@{Instance}!setParent@{setParent}}
+\index{setParent@{setParent}!Instance@{Instance}}
+\doxysubsubsection{\texorpdfstring{setParent()}{setParent()}}
+{\footnotesize\ttfamily void Instance\+::set\+Parent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_instance}{Instance}} $\ast$}]{parent }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_instance_a80e29939a8dac12ad5d8008f3df241af}\label{class_instance_a80e29939a8dac12ad5d8008f3df241af}} 
+\index{Instance@{Instance}!name@{name}}
+\index{name@{name}!Instance@{Instance}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Instance\+::name = \char`\"{}\char`\"{}}
+
+\mbox{\Hypertarget{class_instance_ac72836ec7ef0fab6df04bc8d7d1909c3}\label{class_instance_ac72836ec7ef0fab6df04bc8d7d1909c3}} 
+\index{Instance@{Instance}!type@{type}}
+\index{type@{type}!Instance@{Instance}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_instance_ab62acbe83702c166f536020bfa3ecb7a}{Instance\+Class}} Instance\+::type}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{instance_8h}{instance.\+h}}\item 
+src/\mbox{\hyperlink{instance_8cpp}{instance.\+cpp}}\end{DoxyCompactItemize}

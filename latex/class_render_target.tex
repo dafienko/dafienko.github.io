@@ -1,0 +1,122 @@
+\hypertarget{class_render_target}{}\doxysection{Render\+Target Class Reference}
+\label{class_render_target}\index{RenderTarget@{RenderTarget}}
+
+
+{\ttfamily \#include $<$rendertarget.\+h$>$}
+
+
+
+Collaboration diagram for Render\+Target\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{class_render_target__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_render_target_a9900ac23e1c10126379631937d68612b}{Render\+Target}} (int width, int height)
+\item 
+\mbox{\hyperlink{class_render_target_a3dcecf0d68b5d0d6fa065bbd0194a6fe}{Render\+Target}} (int width, int height, GLint internal\+Format, GLint tex\+Filter\+Type)
+\item 
+\mbox{\hyperlink{class_render_target_a5c8ef0f2c9e46ed80e5e3ce6e5567b8b}{$\sim$\+Render\+Target}} ()
+\item 
+void \mbox{\hyperlink{class_render_target_a1021b06f0d4a0e45f5ad8dc4d8abebe0}{set\+Size}} (int width, int height)
+\item 
+void \mbox{\hyperlink{class_render_target_ad3be95ab0face573601ed15eecb7beef}{bind}} ()
+\item 
+void \mbox{\hyperlink{class_render_target_a593fd91dff1e2b7dd4f6ef7cafac3c2a}{bind\+As\+Texture}} ()
+\item 
+void \mbox{\hyperlink{class_render_target_a2808fc47c7255a36fec3fa75cbd5e589}{bind\+As\+Texture}} (const char $\ast$texture\+Name, GLuint program)
+\item 
+void \mbox{\hyperlink{class_render_target_aa80a69eaa41f4019d4577bd5b0482e3e}{bind\+As\+Texture}} (const char $\ast$texture\+Name, GLuint program, GLint location)
+\item 
+void \mbox{\hyperlink{class_render_target_aff917324e0e420c0780f4bf64cd3aafe}{clear}} (int buffers\+To\+Clear)
+\item 
+void \mbox{\hyperlink{class_render_target_a58d6dbef4741c4f3cabcd85d77368b9c}{render\+To\+Quad}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_render_target_afaa4541dcafceecc89dd9452e0650cb3}{bind\+Default}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_render_target_a9900ac23e1c10126379631937d68612b}\label{class_render_target_a9900ac23e1c10126379631937d68612b}} 
+\index{RenderTarget@{RenderTarget}!RenderTarget@{RenderTarget}}
+\index{RenderTarget@{RenderTarget}!RenderTarget@{RenderTarget}}
+\doxysubsubsection{\texorpdfstring{RenderTarget()}{RenderTarget()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Render\+Target\+::\+Render\+Target (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_render_target_a3dcecf0d68b5d0d6fa065bbd0194a6fe}\label{class_render_target_a3dcecf0d68b5d0d6fa065bbd0194a6fe}} 
+\index{RenderTarget@{RenderTarget}!RenderTarget@{RenderTarget}}
+\index{RenderTarget@{RenderTarget}!RenderTarget@{RenderTarget}}
+\doxysubsubsection{\texorpdfstring{RenderTarget()}{RenderTarget()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Render\+Target\+::\+Render\+Target (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{GLint}]{internal\+Format,  }\item[{GLint}]{tex\+Filter\+Type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_render_target_a5c8ef0f2c9e46ed80e5e3ce6e5567b8b}\label{class_render_target_a5c8ef0f2c9e46ed80e5e3ce6e5567b8b}} 
+\index{RenderTarget@{RenderTarget}!````~RenderTarget@{$\sim$RenderTarget}}
+\index{````~RenderTarget@{$\sim$RenderTarget}!RenderTarget@{RenderTarget}}
+\doxysubsubsection{\texorpdfstring{$\sim$RenderTarget()}{~RenderTarget()}}
+{\footnotesize\ttfamily Render\+Target\+::$\sim$\+Render\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_render_target_ad3be95ab0face573601ed15eecb7beef}\label{class_render_target_ad3be95ab0face573601ed15eecb7beef}} 
+\index{RenderTarget@{RenderTarget}!bind@{bind}}
+\index{bind@{bind}!RenderTarget@{RenderTarget}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily void Render\+Target\+::bind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_render_target_a593fd91dff1e2b7dd4f6ef7cafac3c2a}\label{class_render_target_a593fd91dff1e2b7dd4f6ef7cafac3c2a}} 
+\index{RenderTarget@{RenderTarget}!bindAsTexture@{bindAsTexture}}
+\index{bindAsTexture@{bindAsTexture}!RenderTarget@{RenderTarget}}
+\doxysubsubsection{\texorpdfstring{bindAsTexture()}{bindAsTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Render\+Target\+::bind\+As\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_render_target_a2808fc47c7255a36fec3fa75cbd5e589}\label{class_render_target_a2808fc47c7255a36fec3fa75cbd5e589}} 
+\index{RenderTarget@{RenderTarget}!bindAsTexture@{bindAsTexture}}
+\index{bindAsTexture@{bindAsTexture}!RenderTarget@{RenderTarget}}
+\doxysubsubsection{\texorpdfstring{bindAsTexture()}{bindAsTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Render\+Target\+::bind\+As\+Texture (\begin{DoxyParamCaption}\item[{const char $\ast$}]{texture\+Name,  }\item[{GLuint}]{program }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_render_target_aa80a69eaa41f4019d4577bd5b0482e3e}\label{class_render_target_aa80a69eaa41f4019d4577bd5b0482e3e}} 
+\index{RenderTarget@{RenderTarget}!bindAsTexture@{bindAsTexture}}
+\index{bindAsTexture@{bindAsTexture}!RenderTarget@{RenderTarget}}
+\doxysubsubsection{\texorpdfstring{bindAsTexture()}{bindAsTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Render\+Target\+::bind\+As\+Texture (\begin{DoxyParamCaption}\item[{const char $\ast$}]{texture\+Name,  }\item[{GLuint}]{program,  }\item[{GLint}]{location }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_render_target_afaa4541dcafceecc89dd9452e0650cb3}\label{class_render_target_afaa4541dcafceecc89dd9452e0650cb3}} 
+\index{RenderTarget@{RenderTarget}!bindDefault@{bindDefault}}
+\index{bindDefault@{bindDefault}!RenderTarget@{RenderTarget}}
+\doxysubsubsection{\texorpdfstring{bindDefault()}{bindDefault()}}
+{\footnotesize\ttfamily void Render\+Target\+::bind\+Default (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_render_target_aff917324e0e420c0780f4bf64cd3aafe}\label{class_render_target_aff917324e0e420c0780f4bf64cd3aafe}} 
+\index{RenderTarget@{RenderTarget}!clear@{clear}}
+\index{clear@{clear}!RenderTarget@{RenderTarget}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Render\+Target\+::clear (\begin{DoxyParamCaption}\item[{int}]{buffers\+To\+Clear }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_render_target_a58d6dbef4741c4f3cabcd85d77368b9c}\label{class_render_target_a58d6dbef4741c4f3cabcd85d77368b9c}} 
+\index{RenderTarget@{RenderTarget}!renderToQuad@{renderToQuad}}
+\index{renderToQuad@{renderToQuad}!RenderTarget@{RenderTarget}}
+\doxysubsubsection{\texorpdfstring{renderToQuad()}{renderToQuad()}}
+{\footnotesize\ttfamily void Render\+Target\+::render\+To\+Quad (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_render_target_a1021b06f0d4a0e45f5ad8dc4d8abebe0}\label{class_render_target_a1021b06f0d4a0e45f5ad8dc4d8abebe0}} 
+\index{RenderTarget@{RenderTarget}!setSize@{setSize}}
+\index{setSize@{setSize}!RenderTarget@{RenderTarget}}
+\doxysubsubsection{\texorpdfstring{setSize()}{setSize()}}
+{\footnotesize\ttfamily void Render\+Target\+::set\+Size (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{rendertarget_8h}{rendertarget.\+h}}\item 
+src/\mbox{\hyperlink{rendertarget_8cpp}{rendertarget.\+cpp}}\end{DoxyCompactItemize}

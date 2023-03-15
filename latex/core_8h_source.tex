@@ -1,0 +1,36 @@
+\hypertarget{core_8h_source}{}\doxysection{core.\+h}
+\label{core_8h_source}\index{src/core.h@{src/core.h}}
+\mbox{\hyperlink{core_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <glm/ext.hpp>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{event_8h}{event.h}}"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_core}{Core}}\ \{\ \ \ \ }
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{extern}\ std::unique\_ptr<Event<int,\ int,\ int>>\ \mbox{\hyperlink{namespace_core_a4f60ea5a549cf25aa950226ab9492107}{keyEvent}};}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{extern}\ std::unique\_ptr<Event<double,\ double>>\ \mbox{\hyperlink{namespace_core_a11cb31bfafca854df31020cb2f2ee466}{mouseMoveEvent}};}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{extern}\ std::unique\_ptr<Event<int,\ int,\ int>>\ \mbox{\hyperlink{namespace_core_a7fa38b52c9001d1937cbe2bd5bc6413c}{mouseButtonEvent}};}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_core_a8820d2f818a23d0dc773787354bbf73f}{init}}(\textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height);}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_core_a1a7af92bfcdd5b7ee7cfa99b2503ac67}{update}}(\textcolor{keywordtype}{float}\ dt);}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_core_a818e02782f3ebdd642cddcb1c666bced}{render}}();}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_core_a0c82c0fd87b8a983c50d21340d0e01ef}{resize}}(\textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height);}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ glm::ivec2\ \mbox{\hyperlink{namespace_core_a12dc25a2bc697bb3809e95f595a6f63c}{getWindowSize}}();}
+\DoxyCodeLine{00020\ \ \ \ \ glm::vec2\ \mbox{\hyperlink{namespace_core_a90d2b75c060a6323a77d8aad53a74d5c}{getMousePosition}}();}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespace_core_a1fbd702b16e1330ac764d062d6785ce0}{isMouse1Down}}();}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespace_core_aac4e32837f00d58b882dab8dd26e133c}{isMouse2Down}}();}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_core_acfd5c914674dee64384b7f8ac9651770}{destroy}}();}
+\DoxyCodeLine{00026\ \};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{core_8h_abe4491f99c39137d17bdc525af130464}{checkGLErrors}}(\textcolor{keyword}{const}\ std::string\ \&file,\ \textcolor{keywordtype}{int}\ line);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#define\ CHECK\_GL\_ERRORS\ checkGLErrors(std::string(\_\_FILE\_\_),\ \_\_LINE\_\_);}}
+
+\end{DoxyCode}

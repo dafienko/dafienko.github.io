@@ -1,0 +1,82 @@
+\hypertarget{core_8h}{}\doxysection{src/core.h File Reference}
+\label{core_8h}\index{src/core.h@{src/core.h}}
+{\ttfamily \#include $<$glm/ext.\+hpp$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}event.\+h\char`\"{}}\newline
+Include dependency graph for core.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{core_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{core_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_core}{Core}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{core_8h_a77dcd6c823748e02d4aff0a23850698f}{CHECK\+\_\+\+GL\+\_\+\+ERRORS}}~\mbox{\hyperlink{core_8cpp_abe4491f99c39137d17bdc525af130464}{check\+GLErrors}}(std\+::string(\+\_\+\+\_\+\+FILE\+\_\+\+\_\+), \+\_\+\+\_\+\+LINE\+\_\+\+\_\+);
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_core_a8820d2f818a23d0dc773787354bbf73f}{Core\+::init}} (int width, int height)
+\item 
+void \mbox{\hyperlink{namespace_core_a1a7af92bfcdd5b7ee7cfa99b2503ac67}{Core\+::update}} (float dt)
+\item 
+void \mbox{\hyperlink{namespace_core_a818e02782f3ebdd642cddcb1c666bced}{Core\+::render}} ()
+\item 
+void \mbox{\hyperlink{namespace_core_a0c82c0fd87b8a983c50d21340d0e01ef}{Core\+::resize}} (int width, int height)
+\item 
+glm\+::ivec2 \mbox{\hyperlink{namespace_core_a12dc25a2bc697bb3809e95f595a6f63c}{Core\+::get\+Window\+Size}} ()
+\item 
+glm\+::vec2 \mbox{\hyperlink{namespace_core_a90d2b75c060a6323a77d8aad53a74d5c}{Core\+::get\+Mouse\+Position}} ()
+\item 
+bool \mbox{\hyperlink{namespace_core_a1fbd702b16e1330ac764d062d6785ce0}{Core\+::is\+Mouse1\+Down}} ()
+\item 
+bool \mbox{\hyperlink{namespace_core_aac4e32837f00d58b882dab8dd26e133c}{Core\+::is\+Mouse2\+Down}} ()
+\item 
+void \mbox{\hyperlink{namespace_core_acfd5c914674dee64384b7f8ac9651770}{Core\+::destroy}} ()
+\item 
+void \mbox{\hyperlink{core_8h_abe4491f99c39137d17bdc525af130464}{check\+GLErrors}} (const std\+::string \&file, int line)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_event}{Event}}$<$ int, int, int $>$ $>$ \mbox{\hyperlink{namespace_core_a4f60ea5a549cf25aa950226ab9492107}{Core\+::key\+Event}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_event}{Event}}$<$ double, double $>$ $>$ \mbox{\hyperlink{namespace_core_a11cb31bfafca854df31020cb2f2ee466}{Core\+::mouse\+Move\+Event}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_event}{Event}}$<$ int, int, int $>$ $>$ \mbox{\hyperlink{namespace_core_a7fa38b52c9001d1937cbe2bd5bc6413c}{Core\+::mouse\+Button\+Event}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{core_8h_a77dcd6c823748e02d4aff0a23850698f}\label{core_8h_a77dcd6c823748e02d4aff0a23850698f}} 
+\index{core.h@{core.h}!CHECK\_GL\_ERRORS@{CHECK\_GL\_ERRORS}}
+\index{CHECK\_GL\_ERRORS@{CHECK\_GL\_ERRORS}!core.h@{core.h}}
+\doxysubsubsection{\texorpdfstring{CHECK\_GL\_ERRORS}{CHECK\_GL\_ERRORS}}
+{\footnotesize\ttfamily \#define CHECK\+\_\+\+GL\+\_\+\+ERRORS~\mbox{\hyperlink{core_8cpp_abe4491f99c39137d17bdc525af130464}{check\+GLErrors}}(std\+::string(\+\_\+\+\_\+\+FILE\+\_\+\+\_\+), \+\_\+\+\_\+\+LINE\+\_\+\+\_\+);}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{core_8h_abe4491f99c39137d17bdc525af130464}\label{core_8h_abe4491f99c39137d17bdc525af130464}} 
+\index{core.h@{core.h}!checkGLErrors@{checkGLErrors}}
+\index{checkGLErrors@{checkGLErrors}!core.h@{core.h}}
+\doxysubsubsection{\texorpdfstring{checkGLErrors()}{checkGLErrors()}}
+{\footnotesize\ttfamily void check\+GLErrors (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file,  }\item[{int}]{line }\end{DoxyParamCaption})}
+

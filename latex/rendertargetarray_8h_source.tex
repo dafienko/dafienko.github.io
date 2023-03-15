@@ -1,0 +1,32 @@
+\hypertarget{rendertargetarray_8h_source}{}\doxysection{rendertargetarray.\+h}
+\label{rendertargetarray_8h_source}\index{src/rendertargetarray.h@{src/rendertargetarray.h}}
+\mbox{\hyperlink{rendertargetarray_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{rendertarget_8h}{rendertarget.h}}"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_render_target_array}{RenderTargetArray}}\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ std::vector<std::unique\_ptr<RenderTarget>>\ targets;}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ currentTargetIndex;}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ lastTargetIndex;}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ N\_TARGETS;}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{public}:\ }
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_render_target_array}{RenderTargetArray}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ nTargets,\ \textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height);}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_render_target_array}{RenderTargetArray}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ nTargets,\ \textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height,\ GLint\ internalFormat,\ GLint\ texFilterType);}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_render_target_array_a22c4c7984889529f8ff1e94dd1870817}{bind}}();}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_render_target_array_ab892c4c9e95d45ac6ae3a262471fde43}{bindAsTexture}}();}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_render_target_array_ab892c4c9e95d45ac6ae3a262471fde43}{bindAsTexture}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ textureName,\ GLuint\ program);}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_render_target_array_ab892c4c9e95d45ac6ae3a262471fde43}{bindAsTexture}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ textureName,\ GLuint\ program,\ GLint\ location);}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_render_target}{RenderTarget}}\&\ \mbox{\hyperlink{class_render_target_array_a766f2084345112a1e71c062bf402f710}{getLast}}();}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_render_target}{RenderTarget}}\&\ \mbox{\hyperlink{class_render_target_array_ac4acd0a99b3eb23a94d72c66b7f08f97}{getCurrent}}();}
+\DoxyCodeLine{00026\ \};}
+
+\end{DoxyCode}
